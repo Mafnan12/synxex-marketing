@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+build/
+dist/
+*.o
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
