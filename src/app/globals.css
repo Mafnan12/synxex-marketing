@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+/*
+  SynxEx Design System — Design Tokens
+  One token set, shared conceptually across web/iOS/Android (see src/config/design-tokens.md).
+  Dark-first: institutional trading/banking surfaces default to dark; light theme is a full,
+  equally-designed palette, not an afterthought.
+*/
+
+:root {
+  /* Surfaces */
+  --sx-bg: #f6f7f9;
+  --sx-surface: #ffffff;
+  --sx-surface-raised: #ffffff;
+  --sx-surface-sunken: #eef0f3;
+  --sx-border: #e2e5ea;
+  --sx-border-strong: #cbd0d8;
+
+  /* Text */
+  --sx-text-primary: #0f1420;
+  --sx-text-secondary: #4b5566;
+  --sx-text-tertiary: #7c869a;
+  --sx-text-inverse: #f7f8fa;
+
+  /* Brand — lava orange / lava red / burgundy wine */
+  --sx-brand: #e2321f;
+  --sx-brand-strong: #b81e12;
+  --sx-brand-soft: #fdeae7;
+  --sx-lava-orange: #ff6a2b;
+  --sx-lava-red: #e2321f;
+  --sx-wine: #5c1023;
+
+  /* Semantic — financial */
+  --sx-positive: #0f9d58;
+  --sx-positive-soft: #e5f7ec;
+  --sx-negative: #d33a3a;
+  --sx-negative-soft: #fbe9e9;
+  --sx-warning: #b7791f;
+  --sx-warning-soft: #fdf3e2;
+  --sx-info: #2f5eff;
+  --sx-info-soft: #e8edff;
+  --sx-neutral: #6b7280;
+  --sx-neutral-soft: #eceef1;
+
+  /* Status (system/service) */
+  --sx-status-operational: #0f9d58;
+  --sx-status-degraded: #b7791f;
+  --sx-status-outage: #d33a3a;
+  --sx-status-maintenance: #6b7280;
+
+  /* Chart */
+  --sx-chart-grid: #e2e5ea;
+  --sx-chart-up: #0f9d58;
+  --sx-chart-down: #d33a3a;
+
+  --sx-radius-sm: 6px;
+  --sx-radius-md: 10px;
+  --sx-radius-lg: 16px;
+
+  --sx-shadow-sm: 0 1px 2px rgba(15, 20, 32, 0.06);
+  --sx-shadow-md: 0 4px 16px rgba(15, 20, 32, 0.08);
+
+  --background: var(--sx-bg);
+  --foreground: var(--sx-text-primary);
+}
+
+[data-theme="dark"],
+:root[data-theme="dark"] {
+  --sx-bg: #0a0e17;
+  --sx-surface: #10151f;
+  --sx-surface-raised: #151b28;
+  --sx-surface-sunken: #070a10;
+  --sx-border: #232a38;
+  --sx-border-strong: #333d4f;
+
+  --sx-text-primary: #f2f4f8;
+  --sx-text-secondary: #a7b0c0;
+  --sx-text-tertiary: #6b7688;
+  --sx-text-inverse: #0f1420;
+
+  --sx-brand: #ff6a2b;
+  --sx-brand-strong: #ff8a52;
+  --sx-brand-soft: #3a1410;
+
+  --sx-positive: #22c55e;
+  --sx-positive-soft: #0f2a1c;
+  --sx-negative: #f0524f;
+  --sx-negative-soft: #331414;
+  --sx-warning: #e5a63e;
+  --sx-warning-soft: #332508;
+  --sx-info: #ff6a2b;
+  --sx-info-soft: #3a1410;
+  --sx-neutral: #98a2b3;
+  --sx-neutral-soft: #1b2130;
+
+  --sx-status-operational: #22c55e;
+  --sx-status-degraded: #e5a63e;
+  --sx-status-outage: #f0524f;
+  --sx-status-maintenance: #98a2b3;
+
+  --sx-chart-grid: #232a38;
+  --sx-chart-up: #22c55e;
+  --sx-chart-down: #f0524f;
+
+  --sx-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --sx-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  --background: var(--sx-bg);
+  --foreground: var(--sx-text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --sx-bg: #0a0e17;
+    --sx-surface: #10151f;
+    --sx-surface-raised: #151b28;
+    --sx-surface-sunken: #070a10;
+    --sx-border: #232a38;
+    --sx-border-strong: #333d4f;
+
+    --sx-text-primary: #f2f4f8;
+    --sx-text-secondary: #a7b0c0;
+    --sx-text-tertiary: #6b7688;
+    --sx-text-inverse: #0f1420;
+
+    --sx-brand: #ff6a2b;
+    --sx-brand-strong: #ff8a52;
+    --sx-brand-soft: #3a1410;
+
+    --sx-positive: #22c55e;
+    --sx-positive-soft: #0f2a1c;
+    --sx-negative: #f0524f;
+    --sx-negative-soft: #331414;
+    --sx-warning: #e5a63e;
+    --sx-warning-soft: #332508;
+    --sx-info: #ff6a2b;
+    --sx-info-soft: #3a1410;
+    --sx-neutral: #98a2b3;
+    --sx-neutral-soft: #1b2130;
+
+    --sx-status-operational: #22c55e;
+    --sx-status-degraded: #e5a63e;
+    --sx-status-outage: #f0524f;
+    --sx-status-maintenance: #98a2b3;
+
+    --sx-chart-grid: #232a38;
+    --sx-chart-up: #22c55e;
+    --sx-chart-down: #f0524f;
+
+    --background: var(--sx-bg);
+    --foreground: var(--sx-text-primary);
+  }
+}
+
+@theme inline {
+  --color-background: var(--sx-bg);
+  --color-foreground: var(--sx-text-primary);
+
+  --color-sx-bg: var(--sx-bg);
+  --color-sx-surface: var(--sx-surface);
+  --color-sx-surface-raised: var(--sx-surface-raised);
+  --color-sx-surface-sunken: var(--sx-surface-sunken);
+  --color-sx-border: var(--sx-border);
+  --color-sx-border-strong: var(--sx-border-strong);
+
+  --color-sx-text-primary: var(--sx-text-primary);
+  --color-sx-text-secondary: var(--sx-text-secondary);
+  --color-sx-text-tertiary: var(--sx-text-tertiary);
+  --color-sx-text-inverse: var(--sx-text-inverse);
+
+  --color-sx-brand: var(--sx-brand);
+  --color-sx-brand-strong: var(--sx-brand-strong);
+  --color-sx-brand-soft: var(--sx-brand-soft);
+  --color-sx-lava-orange: var(--sx-lava-orange);
+  --color-sx-lava-red: var(--sx-lava-red);
+  --color-sx-wine: var(--sx-wine);
+
+  --color-sx-positive: var(--sx-positive);
+  --color-sx-positive-soft: var(--sx-positive-soft);
+  --color-sx-negative: var(--sx-negative);
+  --color-sx-negative-soft: var(--sx-negative-soft);
+  --color-sx-warning: var(--sx-warning);
+  --color-sx-warning-soft: var(--sx-warning-soft);
+  --color-sx-info: var(--sx-info);
+  --color-sx-info-soft: var(--sx-info-soft);
+  --color-sx-neutral: var(--sx-neutral);
+  --color-sx-neutral-soft: var(--sx-neutral-soft);
+
+  --color-sx-status-operational: var(--sx-status-operational);
+  --color-sx-status-degraded: var(--sx-status-degraded);
+  --color-sx-status-outage: var(--sx-status-outage);
+  --color-sx-status-maintenance: var(--sx-status-maintenance);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-financial);
+}
+
+* {
+  border-color: var(--sx-border);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--sx-bg);
+  color: var(--sx-text-primary);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sx-border-strong);
+  border-radius: 8px;
+}
