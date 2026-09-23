@@ -1,0 +1,5 @@
+type TradingAgentCardProps = { title: string; description: string; metrics: string[]; tone?: "orange" | "wine" | "smoke"; index: number };
+const toneMap: Record<NonNullable<TradingAgentCardProps["tone"]>, string> = { orange: "bg-[#1a100c]", wine: "bg-[#160d12]", smoke: "bg-[#101010]" };
+export function TradingAgentCard({ title, description, metrics, tone = "smoke", index }: TradingAgentCardProps) {
+  return <article className={`group relative p-7 transition-colors duration-300 hover:bg-white/[0.025] sm:p-8 ${toneMap[tone]}`}><span className="absolute right-7 top-7 font-mono text-[10px] text-zinc-600">0{index + 1}</span><p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#ff8b68]">Concept module</p><h3 className="mt-3 text-2xl font-semibold tracking-[-0.05em] text-white">{title}</h3><p className="mt-3 max-w-xl text-sm leading-6 text-zinc-400">{description}</p><div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">{metrics.map((metric) => <span key={metric} className="flex items-center gap-2 text-xs text-zinc-300"><span className="h-1 w-1 rounded-full bg-[#ff5a1f]" />{metric}</span>)}</div></article>;
+}

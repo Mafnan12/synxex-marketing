@@ -1,0 +1,5 @@
+import type { ReactNode } from "react";
+type SectionProps = { id: string; number: string; eyebrow: string; title: string; description: string; tone?: "default" | "dark"; children: ReactNode };
+export function Section({ id, number, eyebrow, title, description, tone = "default", children }: SectionProps) {
+  return <section id={id} className={`relative px-4 py-20 sm:px-6 sm:py-28 lg:px-10 lg:py-36 ${tone === "dark" ? "bg-[#080808]" : "bg-[#050505]"}`}><div className="mx-auto max-w-[1180px]"><div className="mb-12 grid gap-6 md:grid-cols-[120px_1fr] md:gap-10"><div className="font-mono text-xs text-[#ff8b68]">{number} <span className="ml-2 inline-block h-px w-8 align-middle bg-[#ff5a1f]/60" /></div><div className="max-w-3xl"><p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#ff8b68]">{eyebrow}</p><h2 className="mt-5 text-4xl font-semibold leading-[0.98] tracking-[-0.065em] text-white sm:text-5xl lg:text-6xl">{title}</h2><p className="mt-5 max-w-2xl text-base leading-7 text-zinc-400">{description}</p></div></div>{children}</div></section>;
+}
