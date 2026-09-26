@@ -16,7 +16,7 @@ import { useNotificationStore } from "@/state/useNotificationStore";
 import { useSystemStatusStore } from "@/state/useSystemStatusStore";
 import { marketService, transactionService, kycService, aiAgentService } from "@/services";
 import type { MarketTicker, Transaction, KycProfile, AiAgent } from "@/types";
-import { AlertTriangle, Bot, ArrowRight } from "lucide-react";
+import { AlertTriangle, ArrowRight } from "lucide-react";
 import { formatTimestamp } from "@/utils/format";
 
 export default function DashboardPage() {
@@ -252,40 +252,6 @@ export default function DashboardPage() {
               ) : (
                 transactions.map((t) => <TransactionRow key={t.id} transaction={t} />)
               )}
-            </CardContent>
-          </Card>
-
-          {/* Active AI agents */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Active AI agents</CardTitle>
-              <Link href="/app/ai-agents" className="text-xs font-medium text-sx-brand hover:underline">
-                Marketplace
-              </Link>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              {!agents ? (
-                <Skeleton className="h-20 w-full" />
-              ) : (
-                agents.slice(0, 2).map((a) => (
-                  <div key={a.id} className="flex items-start gap-3 rounded-[var(--sx-radius-md)] border border-sx-border p-3">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sx-info-soft text-sx-info">
-                      <Bot className="h-4 w-4" />
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm font-medium text-sx-text-primary">{a.name}</p>
-                      <div className="mt-1 flex items-center gap-2">
-                        <Badge tone={a.validationStatus === "paper-trading" ? "warning" : "positive"}>
-                          {a.validationStatus === "paper-trading" ? "Paper trading" : "Live verified"}
-                        </Badge>
-                      </div>
-                    </div>
-                  </div>
-                ))
-              )}
-              <p className="text-[11px] text-sx-text-tertiary">
-                Demo performance data. Past performance does not guarantee future results.
-              </p>
             </CardContent>
           </Card>
         </div>

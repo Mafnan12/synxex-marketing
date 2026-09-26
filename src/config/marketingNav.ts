@@ -44,6 +44,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
   {
     heading: "Platform",
     links: [
+      { label: "AI Agents", href: "/ai-agents", description: "AI-managed trading strategies" },
       { label: "Web3 Wallet", href: "/wallet", description: "One wallet across 30+ networks" },
       { label: "Security", href: "/security", description: "How SynxEx protects your account" },
       { label: "Proof of Reserves", href: "/proof-of-reserves", description: "Reserve verification approach" },
