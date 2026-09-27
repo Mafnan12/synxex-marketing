@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 export interface WorkflowPhase {
   stepIndex: string;
@@ -368,7 +369,6 @@ export const WORKFLOW_PHASES: WorkflowPhase[] = [
 
 export function AgenticWorkflowInfographic() {
   const [activeStepIdx, setActiveStepIdx] = useState(0);
-  const activeStep = WORKFLOW_PHASES[activeStepIdx];
 
   return (
     <div className="w-full space-y-12">
@@ -429,74 +429,16 @@ export function AgenticWorkflowInfographic() {
           })}
         </div>
 
-        {/* ================= RIGHT: CONSOLE CANVAS ================= */}
-        <div className="lg:col-span-8 rounded-2xl bg-[#0A0A0C] border border-white/[0.08] overflow-hidden shadow-2xl flex flex-col">
-          
-          {/* Header Bar */}
-          <div className="flex items-center justify-between px-5 py-3.5 bg-[#0F0F12] border-b border-white/[0.06] text-xs font-mono">
-            <div className="flex items-center gap-2.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span className="text-white font-medium">Stage {activeStep.stepIndex}</span>
-              <span className="text-zinc-500">/</span>
-              <span className="text-zinc-400">{activeStep.title}</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] text-[#FF8B68] bg-[#1A1210] border border-[#FF5A1F]/20 px-2.5 py-0.5 rounded-full">
-                {activeStep.status}
-              </span>
-            </div>
-          </div>
-
-          {/* Body */}
-          <div className="p-5 sm:p-6 space-y-6">
-            
-            {/* Directive Display */}
-            <div className="p-3.5 rounded-xl bg-[#0F0F12] border border-white/[0.05] space-y-1">
-              <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">
-                ACTIVE PIPELINE DIRECTIVE
-              </span>
-              <p className="text-xs font-mono text-zinc-300 leading-relaxed">
-                {activeStep.directive}
-              </p>
-            </div>
-
-            {/* 2x2 Telemetry Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {activeStep.panels.map((panel, pIdx) => (
-                <div
-                  key={pIdx}
-                  className="p-4 rounded-xl bg-[#0F0F12] border border-white/[0.05] hover:border-white/10 transition-colors flex flex-col justify-between min-h-[140px]"
-                >
-                  <div className="flex items-start justify-between gap-2 mb-3">
-                    <div>
-                      <h4 className="text-xs font-semibold text-white tracking-tight">
-                        {panel.title}
-                      </h4>
-                      <p className="text-[10px] font-mono text-zinc-500 mt-0.5">
-                        {panel.category}
-                      </p>
-                    </div>
-                    <span className="text-[9px] font-mono text-zinc-400 bg-black/40 border border-white/[0.06] px-2 py-0.5 rounded shrink-0">
-                      {panel.badge}
-                    </span>
-                  </div>
-
-                  <div className="mt-auto">
-                    {panel.content}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-
-          {/* Footer Bar */}
-          <div className="px-5 py-3 bg-[#0D0D10] border-t border-white/[0.04] flex items-center justify-between text-[11px] font-mono text-zinc-500">
-            <span>Deterministic Policy: Active</span>
-            <span className="text-zinc-400">Zero-Deviation Hardware Gate</span>
-          </div>
-
+        {/* ================= RIGHT: WALLET DASHBOARD IMAGE ================= */}
+        <div className="lg:col-span-8 rounded-2xl overflow-hidden shadow-2xl border border-white/[0.08] group">
+          <Image
+            src="/wallet-dashboard.jpg"
+            alt="SynxEx Wallet Dashboard"
+            width={1024}
+            height={768}
+            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.01]"
+            priority
+          />
         </div>
 
       </div>

@@ -4,18 +4,18 @@ import React from "react";
 
 export function FutureRoadmapCards() {
   return (
-    <section id="future" className="relative px-4 py-20 sm:px-6 sm:py-28 lg:px-10 lg:py-36 bg-[#050505] overflow-hidden">
+    <section id="future" className="relative px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28 bg-[#09090B] overflow-hidden">
       <div className="mx-auto max-w-[1380px]">
         {/* Centered Header Section (Mirroring Reference Design) */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16 sm:mb-20">
-          <p className="text-[11px] font-mono font-semibold uppercase tracking-[0.25em] text-[#FF8B68]">
-            FUTURE / COMING SOON
+          <p className="text-[11px] font-mono font-semibold uppercase tracking-[0.25em] text-[#FF5A1F]">
+            PLANNED CONCEPTS
           </p>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white leading-[1.1]">
-            Built to evolve with intention.
+          <h2 className="text-3xl font-semibold tracking-tight text-[#F4F4F5] leading-[1.1] sm:text-4xl">
+            Capabilities under consideration.
           </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-zinc-400 max-w-xl mx-auto font-light">
-            These are planned directions for the SynxEx experience. They are not active services, agents, or financial products.
+          <p className="text-sm sm:text-base leading-relaxed text-zinc-400 max-w-xl mx-auto">
+            These ideas are not active services. No AI agent makes investment decisions or executes trades.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export function FutureRoadmapCards() {
               CARD 01: Research Workspaces
               Visual: Floating Card with Glowing Ambient Halo & Orbiting Crypto Tokens
               ========================================================================= */}
-          <div className="group rounded-[2rem] bg-[#0C0C0E] border border-white/[0.06] p-8 sm:p-10 flex flex-col justify-between min-h-[480px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
+          <div className="group rounded-2xl bg-[#141416] border border-white/[0.16] p-6 sm:p-8 flex flex-col justify-between min-h-[380px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#FF5A1F]/5 blur-[70px] pointer-events-none group-hover:bg-[#FF5A1F]/10 transition-all duration-500" />
 
@@ -55,7 +55,7 @@ export function FutureRoadmapCards() {
                 {/* Floating Crypto Token 2 (Center - Orange Protocol Token) */}
                 <g transform="translate(130, 30)" className="transition-transform duration-700 group-hover:-translate-y-1.5">
                   <circle cx="17" cy="17" r="16" fill="#42160C" stroke="#FF5A1F" strokeWidth="1.2" />
-                  <path d="M12 18 C12 14, 22 14, 22 18 C22 22, 12 22, 12 18 Z" fill="#FF8B68" />
+                  <path d="M12 18 C12 14, 22 14, 22 18 C22 22, 12 22, 12 18 Z" fill="#FF5A1F" />
                   <circle cx="17" cy="17" r="3" fill="#FFFFFF" />
                 </g>
 
@@ -80,12 +80,12 @@ export function FutureRoadmapCards() {
                   />
 
                   {/* Microchip Contact Pad */}
-                  <rect x="90" y="104" width="16" height="12" rx="3" fill="#3D2018" stroke="#FF8B68" strokeWidth="0.8" />
-                  <line x1="90" y1="110" x2="106" y2="110" stroke="#FF8B68" strokeWidth="0.6" />
-                  <line x1="98" y1="104" x2="98" y2="116" stroke="#FF8B68" strokeWidth="0.6" />
+                  <rect x="90" y="104" width="16" height="12" rx="3" fill="#3D2018" stroke="#FF5A1F" strokeWidth="0.8" />
+                  <line x1="90" y1="110" x2="106" y2="110" stroke="#FF5A1F" strokeWidth="0.6" />
+                  <line x1="98" y1="104" x2="98" y2="116" stroke="#FF5A1F" strokeWidth="0.6" />
 
                   {/* Embossed Card Info Lines */}
-                  <line x1="90" y1="148" x2="125" y2="148" stroke="#FF8B68" strokeWidth="2.5" strokeLinecap="round" strokeOpacity="0.7" />
+                  <line x1="90" y1="148" x2="125" y2="148" stroke="#FF5A1F" strokeWidth="2.5" strokeLinecap="round" strokeOpacity="0.7" />
                   <line x1="90" y1="154" x2="110" y2="154" stroke="#555555" strokeWidth="1.5" strokeLinecap="round" />
 
                   {/* Contactless Wave Logo */}
@@ -98,16 +98,16 @@ export function FutureRoadmapCards() {
             {/* Bottom Content Area */}
             <div className="pt-6 relative z-10 space-y-3">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[11px] text-[#FF8B68] font-semibold">01</span>
+                <span className="font-mono text-[11px] text-[#FF5A1F] font-semibold">Concept</span>
                 <span className="w-1 h-1 rounded-full bg-zinc-600" />
                 <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-zinc-400 font-medium">
-                  Exploring
+                  Under consideration
                 </span>
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight text-white">
+              <h3 className="text-2xl font-semibold tracking-tight text-[#F4F4F5]">
                 Research workspaces
               </h3>
-              <p className="text-sm leading-relaxed text-zinc-400 font-light">
+              <p className="text-sm leading-relaxed text-zinc-400">
                 A planned environment for reviewing structured context, source material, and analytical notes.
               </p>
             </div>
@@ -117,7 +117,7 @@ export function FutureRoadmapCards() {
               CARD 02: Governed Automations
               Visual: Vibrant Orange Cold Card + Sleek Authorization Terminal Device
               ========================================================================= */}
-          <div className="group rounded-[2rem] bg-[#0C0C0E] border border-white/[0.06] p-8 sm:p-10 flex flex-col justify-between min-h-[480px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
+          <div className="group rounded-2xl bg-[#141416] border border-white/[0.16] p-6 sm:p-8 flex flex-col justify-between min-h-[380px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#FF5A1F]/5 blur-[70px] pointer-events-none group-hover:bg-[#FF5A1F]/10 transition-all duration-500" />
 
@@ -206,16 +206,16 @@ export function FutureRoadmapCards() {
             {/* Bottom Content Area */}
             <div className="pt-6 relative z-10 space-y-3">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[11px] text-[#FF8B68] font-semibold">02</span>
+                <span className="font-mono text-[11px] text-[#FF5A1F] font-semibold">Concept</span>
                 <span className="w-1 h-1 rounded-full bg-zinc-600" />
                 <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-zinc-400 font-medium">
-                  Planned
+                  Under consideration
                 </span>
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight text-white">
+              <h3 className="text-2xl font-semibold tracking-tight text-[#F4F4F5]">
                 Governed automations
               </h3>
-              <p className="text-sm leading-relaxed text-zinc-400 font-light">
+              <p className="text-sm leading-relaxed text-zinc-400">
                 Future workflow tooling designed around explicit policies, approvals, and clear human control.
               </p>
             </div>
@@ -225,7 +225,7 @@ export function FutureRoadmapCards() {
               CARD 03: Personalized Intelligence
               Visual: Minimalist Green Sprout Growing with Orange Seed & "COMING SOON" Pill
               ========================================================================= */}
-          <div className="group rounded-[2rem] bg-[#0C0C0E] border border-white/[0.06] p-8 sm:p-10 flex flex-col justify-between min-h-[480px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
+          <div className="group rounded-2xl bg-[#141416] border border-white/[0.16] p-6 sm:p-8 flex flex-col justify-between min-h-[380px] relative overflow-hidden transition-all duration-500 hover:border-[#FF5A1F]/40 hover:shadow-2xl hover:shadow-[#FF5A1F]/5">
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#FF5A1F]/5 blur-[70px] pointer-events-none group-hover:bg-[#FF5A1F]/10 transition-all duration-500" />
 
@@ -267,17 +267,17 @@ export function FutureRoadmapCards() {
             {/* Bottom Content Area */}
             <div className="pt-6 relative z-10 space-y-3">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[11px] text-[#FF8B68] font-semibold">03</span>
+                <span className="font-mono text-[11px] text-[#FF5A1F] font-semibold">Concept</span>
                 <span className="w-1 h-1 rounded-full bg-zinc-600" />
                 <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-zinc-400 font-medium">
-                  Future
+                  Under consideration
                 </span>
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight text-white">
-                Personalized intelligence
+              <h3 className="text-2xl font-semibold tracking-tight text-[#F4F4F5]">
+                Market insights
               </h3>
-              <p className="text-sm leading-relaxed text-zinc-400 font-light">
-                A coming-soon vision for interfaces that adapt presentation and context to defined user preferences.
+              <p className="text-sm leading-relaxed text-zinc-400">
+                Summaries of selected market information and relevant risk context for a person to review.
               </p>
 
 
