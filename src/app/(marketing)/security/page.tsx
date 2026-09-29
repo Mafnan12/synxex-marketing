@@ -62,9 +62,9 @@ export default function SecurityPage() {
       <div className="min-h-screen bg-[#09090B] font-sans text-[#F4F4F5] selection:bg-[#ff5a1f]/30 selection:text-[#F4F4F5]">
       
       {/* HERO */}
-      <section className="relative isolate px-5 pb-14 pt-32 sm:px-6 sm:pb-20 sm:pt-36 lg:px-10 lg:pb-28 lg:pt-40">
+      <section className="relative isolate px-5 pb-8 pt-24 sm:px-6 sm:pb-10 sm:pt-28 lg:px-10 lg:pb-12 lg:pt-32">
         <div className="mx-auto max-w-[1440px]">
-          <div className="synxex-warm-hero relative flex min-h-[560px] items-center justify-center overflow-hidden rounded-3xl border border-white/[0.12] px-6 py-16 sm:px-12 sm:py-20 lg:px-20 lg:py-24">
+          <div className="synxex-warm-hero relative flex min-h-[480px] items-center justify-center overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
             <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
               <div className="flex w-full flex-col items-center gap-7">
                 <h1 className="text-4xl font-semibold leading-[1.02] tracking-tight text-[#F4F4F5] sm:text-6xl lg:text-[64px]">
@@ -92,8 +92,8 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 02 — SECURITY PHILOSOPHY */}
-      <section id="principles" className="bg-[#09090B] px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <section id="principles" className="bg-[#09090B] px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto space-y-10">
           <div className="max-w-2xl space-y-4">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Security by design.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -109,7 +109,7 @@ export default function SecurityPage() {
               { title: "Approve", desc: "Check transaction details before confirmation." },
               { title: "Review", desc: "Understand wallet activity." },
             ].map((item, idx) => (
-              <div key={idx} className="bg-[#181110] border border-white/[0.14] p-6 rounded-xl relative group hover:border-[#ff5a1f]/40 transition-colors">
+              <div key={idx} className="py-3">
                 <h4 className="text-lg font-medium text-[#F4F4F5] mb-2">{item.title}</h4>
                 <p className="text-xs text-zinc-400  leading-relaxed">{item.desc}</p>
               </div>
@@ -119,8 +119,8 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 03 — ACCOUNT PROTECTION */}
-      <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 space-y-6">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Protecting account access.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -143,17 +143,16 @@ export default function SecurityPage() {
           </div>
 
           {/* Interactive Security Dashboard Concept */}
-          <div className="lg:col-span-7 bg-[#181110] border border-white/[0.14] rounded-2xl p-6 sm:p-8 space-y-6">
+          <div className="lg:col-span-7 space-y-6">
             <div className="flex items-center justify-between pb-4">
               <span className="text-xs font-mono text-zinc-400">Security design considerations</span>
-              <span className="text-xs font-mono text-[#FF5A1F] bg-[#ff5a1f]/10 px-2.5 py-1 rounded">Concept</span>
             </div>
 
             <div className="space-y-3">
               {securityLayers.map((layer) => (
                 <div
                   key={layer.title}
-                  className="rounded-xl border border-white/[0.14] bg-[#101010] p-4"
+                  className="py-4"
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-sm font-medium text-[#F4F4F5]">{layer.title}</span>
@@ -171,8 +170,8 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 04 — DATA & ENCRYPTION */}
-      <section className="bg-[#09090B] px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <section className="bg-[#09090B] px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto space-y-10">
           <div className="max-w-2xl space-y-4">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Information and access.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -188,7 +187,7 @@ export default function SecurityPage() {
               { label: "Transaction", detail: "Review before confirmation" },
               { label: "Activity", detail: "Understand wallet actions" }
             ].map((node, idx) => (
-              <div key={idx} className="bg-[#181110] border border-white/[0.14] p-6 rounded-xl flex flex-col justify-between">
+              <div key={idx} className="py-3">
                 <div>
                   <h4 className="text-base font-medium text-[#F4F4F5] mb-1">{node.label}</h4>
                 </div>
@@ -200,8 +199,8 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 05 — SECURITY MONITORING */}
-      <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 space-y-6">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Current security features.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -216,7 +215,7 @@ export default function SecurityPage() {
               ["Wallet monitoring", "Not announced"],
               ["Security certifications", "None stated"],
             ].map(([label, value]) => (
-              <div key={label} className="flex items-center justify-between gap-6 rounded-xl bg-[#181110] px-5 py-4">
+              <div key={label} className="flex items-center justify-between gap-6 py-3">
                 <span className="text-sm text-zinc-300">{label}</span>
                 <span className="text-xs text-zinc-500">{value}</span>
               </div>
@@ -226,8 +225,8 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 06 — FUTURE SECURITY ARCHITECTURE */}
-      <section id="future-architecture" className="bg-[#09090B] px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <section id="future-architecture" className="bg-[#09090B] px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto space-y-10">
           <div className="max-w-2xl space-y-4">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Security architecture.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -238,7 +237,7 @@ export default function SecurityPage() {
           {/* Architectural Stack */}
           <div className="space-y-3">
             {architectureStack.map((item, idx) => (
-              <div key={idx} className="bg-[#181110] border border-white/[0.14] p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-white/15 transition-colors">
+              <div key={idx} className="flex flex-col py-4 sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center space-x-4">
                   <h4 className="text-base font-medium text-[#F4F4F5]">{item.name}</h4>
                 </div>
@@ -250,8 +249,8 @@ export default function SecurityPage() {
       </section>
 
       {/* TRUST AND SECURITY PRINCIPLES */}
-      <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="max-w-7xl mx-auto space-y-10">
           <div className="max-w-2xl space-y-4">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Clear control builds trust.</h3>
             <p className="text-zinc-400  leading-relaxed">
@@ -261,7 +260,7 @@ export default function SecurityPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {principles.map((p, idx) => (
-              <div key={idx} className="bg-[#181110] border border-white/[0.14] p-8 rounded-xl space-y-3 hover:border-white/15 transition-colors">
+              <div key={idx} className="space-y-3 py-3">
                 <h4 className="text-lg font-medium text-[#F4F4F5]">{p.title}</h4>
                 <p className="text-xs text-zinc-400  leading-relaxed">{p.description}</p>
               </div>
@@ -271,7 +270,7 @@ export default function SecurityPage() {
       </section>
 
       {/* SECTION 09 — FUTURE / COMING SOON */}
-      <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28 bg-[#09090B]">
+      <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20 bg-[#09090B]">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">Security details will be shared as they are defined.</h3>
 

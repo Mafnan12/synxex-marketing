@@ -1,9 +1,9 @@
 export function AutomatedMarketAnalysis() {
   return (
-    <div className="grid items-center gap-10 py-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:py-14">
+    <div className="grid items-center gap-8 py-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12 lg:py-8">
       <div className="max-w-xl">
         <p className="mb-5 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#FF5A1F]">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A1F]" /> Market analysis concept
+          <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A1F]" /> Market analysis
         </p>
         <h2 className="text-3xl font-semibold leading-tight tracking-tight text-[#F4F4F5] sm:text-4xl">
           Market context for human review
@@ -18,9 +18,6 @@ export function AutomatedMarketAnalysis() {
           <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-[#F4F4F5]">
             Areas for review
           </h3>
-          <span className="rounded-full border border-[#FF5A1F]/35 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-[#FF5A1F]">
-            Concept
-          </span>
         </div>
 
         <div>

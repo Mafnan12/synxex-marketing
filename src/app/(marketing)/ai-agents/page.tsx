@@ -8,9 +8,9 @@ import { AI_AGENT_CARDS, AI_WORKFLOW_STEPS } from "@/content/ai";
 export default function AIAgentsPage() {
   return <main className="relative min-h-screen overflow-hidden bg-[#09090B] font-sans text-[#F4F4F5] selection:bg-[#FF5A1F] selection:text-[#F4F4F5]">
 
-    <section id="top" className="relative isolate px-5 pb-14 pt-32 sm:px-6 sm:pb-20 sm:pt-36 lg:px-10 lg:pb-28 lg:pt-40">
+    <section id="top" className="relative isolate px-5 pb-8 pt-24 sm:px-6 sm:pb-10 sm:pt-28 lg:px-10 lg:pb-12 lg:pt-32">
       <div className="mx-auto max-w-[1440px]">
-        <div className="synxex-warm-hero relative flex min-h-[560px] items-center justify-center overflow-hidden rounded-3xl border border-white/[0.12] px-6 py-16 sm:px-12 sm:py-20 lg:px-20 lg:py-24">
+        <div className="synxex-warm-hero relative flex min-h-[480px] items-center justify-center overflow-hidden rounded-3xl border border-white/[0.12] px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
           {/* Hero content */}
           <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
             <div className="flex w-full flex-col items-center gap-8">
@@ -35,8 +35,8 @@ export default function AIAgentsPage() {
       </div>
     </section>
 
-    <section className="relative px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
-      <div className="mx-auto max-w-[1440px] px-6 py-10 sm:px-12 sm:py-14 lg:px-16 lg:py-16">
+    <section className="relative px-5 py-8 sm:px-6 sm:py-10 lg:px-10 lg:py-12">
+      <div className="mx-auto max-w-[1440px] px-5 py-4 sm:px-8 sm:py-6 lg:px-12 lg:py-8">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] lg:gap-16">
           <div className="max-w-4xl">
             <h2 className="text-3xl font-semibold leading-[1.08] tracking-tight text-[#F4F4F5] sm:text-4xl">
@@ -48,7 +48,7 @@ export default function AIAgentsPage() {
           </div>
           <div className="mx-auto w-full max-w-[360px] lg:ml-auto">
             <video autoPlay loop muted playsInline className="block h-auto w-full object-contain">
-              <source src="/Beige%20and%20White%20Minimalist%20Animated%20Chat%20Text%20Mobile%20Video%20(2).mp4" type="video/mp4" />
+              <source src="/phone-video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function AIAgentsPage() {
     </section>
 
     <div className="relative">
-      <section id="agents" className="relative px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28 bg-[#09090B]">
+      <section id="agents" className="relative px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20 bg-[#09090B]">
         <div className="mx-auto max-w-[1440px]">
         <div className="space-y-10">
           <div className="pt-4">
@@ -84,7 +84,7 @@ export default function AIAgentsPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mt-6">
               {AI_AGENT_CARDS.map((agent, index) => (
                 <AgentCard key={agent.id} agent={agent} featured={index === 0} />
               ))}
@@ -93,12 +93,12 @@ export default function AIAgentsPage() {
         </div>
         </div>
       </section>
-      <section id="market-analysis" className="relative px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
+      <section id="market-analysis" className="relative px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-[1440px]">
           <AutomatedMarketAnalysis />
         </div>
       </section>
-      <section id="workflow" className="relative px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
+      <section id="workflow" className="relative px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-[1440px]">
           <div className="mb-8 max-w-3xl">
             <h2 className="text-3xl font-semibold tracking-tight text-[#F4F4F5] sm:text-4xl">A reviewable workflow</h2>
@@ -107,7 +107,7 @@ export default function AIAgentsPage() {
           <AgentWorkflow steps={AI_WORKFLOW_STEPS} />
         </div>
       </section>
-      <section id="intelligence" className="relative px-5 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-28">
+      <section id="intelligence" className="relative px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-[1440px]">
           <div className="mb-8 max-w-3xl">
             <h2 className="text-3xl font-semibold tracking-tight text-[#F4F4F5] sm:text-4xl">Evidence alongside context</h2>
