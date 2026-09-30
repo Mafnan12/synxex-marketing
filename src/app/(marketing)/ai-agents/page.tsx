@@ -37,20 +37,13 @@ export default function AIAgentsPage() {
 
     <section className="relative px-5 py-8 sm:px-6 sm:py-10 lg:px-10 lg:py-12">
       <div className="mx-auto max-w-[1440px] px-5 py-4 sm:px-8 sm:py-6 lg:px-12 lg:py-8">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] lg:gap-16">
-          <div className="max-w-4xl">
-            <h2 className="text-3xl font-semibold leading-[1.08] tracking-tight text-[#F4F4F5] sm:text-4xl">
-              Research, risk context, and workflow review.
-            </h2>
-            <p className="mt-5 max-w-3xl text-base leading-7 text-zinc-300 sm:text-lg">
-              Planned agent roles would organize information and prepare it for human review. Financial trades are not executed by this concept.
-            </p>
-          </div>
-          <div className="mx-auto w-full max-w-[360px] lg:ml-auto">
-            <video autoPlay loop muted playsInline className="block h-auto w-full object-contain">
-              <source src="/phone-video.mp4" type="video/mp4" />
-            </video>
-          </div>
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-semibold leading-[1.08] tracking-tight text-[#F4F4F5] sm:text-4xl">
+            Research, risk context, and workflow review.
+          </h2>
+          <p className="mt-5 max-w-4xl text-base leading-7 text-zinc-300 sm:text-lg">
+            AI agents could summarize market movements, highlight notable trends, and explain risk signals in response to a question. Their insights support research and human review; trades are not executed by this concept.
+          </p>
         </div>
       </div>
     </section>
@@ -119,6 +112,5 @@ export default function AIAgentsPage() {
       <FutureRoadmapCards />
     </div>
 
-    <footer className="bg-[#09090B] px-6 py-10 sm:px-8 lg:px-12"><div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-5 text-center md:flex-row md:text-left"><p className="text-sm font-semibold tracking-[-0.04em] text-[#F4F4F5]">SYNXEX</p><p className="text-[10px] uppercase tracking-[0.16em] text-zinc-600">Conceptual product experience · No live trading or AI agents</p></div></footer>
   </main>;
 }

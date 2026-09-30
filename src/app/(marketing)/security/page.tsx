@@ -62,11 +62,9 @@ export default function SecurityPage() {
       <div className="min-h-screen bg-[#09090B] font-sans text-[#F4F4F5] selection:bg-[#ff5a1f]/30 selection:text-[#F4F4F5]">
       
       {/* HERO */}
-      <section className="relative isolate px-5 pb-8 pt-24 sm:px-6 sm:pb-10 sm:pt-28 lg:px-10 lg:pb-12 lg:pt-32">
-        <div className="mx-auto max-w-[1440px]">
-          <div className="synxex-warm-hero relative flex min-h-[480px] items-center justify-center overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
-            <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
-              <div className="flex w-full flex-col items-center gap-7">
+      <section className="synxex-warm-hero relative isolate flex min-h-[min(760px,90svh)] items-center justify-center overflow-hidden px-5 py-24 sm:px-6 sm:py-28 lg:px-10">
+        <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
+          <div className="flex w-full flex-col items-center gap-7">
                 <h1 className="text-4xl font-semibold leading-[1.02] tracking-tight text-[#F4F4F5] sm:text-6xl lg:text-[64px]">
                   Security through<br />
                   <span className="text-[#ffb38f]">clear review.</span>
@@ -85,8 +83,6 @@ export default function SecurityPage() {
                     Security architecture
                   </a>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
