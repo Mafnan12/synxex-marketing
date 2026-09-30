@@ -15,7 +15,7 @@ import { useAccountStore } from "@/state/useAccountStore";
 import { useNotificationStore } from "@/state/useNotificationStore";
 import { useSystemStatusStore } from "@/state/useSystemStatusStore";
 import { marketService, transactionService, kycService, aiAgentService } from "@/services";
-import type { MarketTicker, Transaction, KycProfile, AiAgent } from "@/types";
+import type { MarketTicker, Transaction, KycProfile, AiAgent, AppNotification } from "@/types";
 import { AlertTriangle, ArrowRight } from "lucide-react";
 import { formatTimestamp } from "@/utils/format";
 
@@ -39,7 +39,7 @@ export default function DashboardPage() {
     aiAgentService.listAgents().then(setAgents);
   }, [fetchAccount, fetchNotifications, fetchSystemStatus]);
 
-  const securityAlerts = notifications.filter((n) => n.category === "security" && !n.read);
+  const securityAlerts = notifications.filter((n: AppNotification) => n.category === "security" && !n.read);
   const currentTier = kyc?.tiers.find((t) => t.level === kyc.currentTier);
 
   return (
