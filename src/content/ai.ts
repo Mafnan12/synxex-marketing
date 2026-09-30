@@ -1,120 +1,102 @@
 export const AI_AGENT_CARDS = [
   {
     id: "01",
-    name: "Research Agent",
-    role: "Market and document intelligence",
+    name: "Research assistant",
+    role: "Market and document context",
     description:
-      "Gathers relevant filings, news, and financial context to produce concise research summaries for human review.",
+      "A planned assistant for organizing selected filings, news, and market material into summaries for review.",
     accent: "rgba(255, 90, 31, 0.22)",
-    tags: ["Research", "Docs", "News"],
+    tags: ["Research", "Sources", "Summary"],
   },
   {
     id: "02",
-    name: "Risk Agent",
-    role: "Policy and exposure checks",
+    name: "Risk context",
+    role: "Exposure and policy review",
     description:
-      "Ensures actions remain aligned to constraints, risk thresholds, and operational approval rules before execution.",
+      "A planned view of relevant exposure and policy constraints to help people assess a decision.",
     accent: "rgba(110, 24, 56, 0.32)",
-    tags: ["Risk", "Compliance", "Guardrails"],
+    tags: ["Risk", "Context", "Review"],
   },
   {
     id: "03",
-    name: "Execution Agent",
-    role: "Workflow orchestration",
+    name: "Workflow coordinator",
+    role: "Approved task coordination",
     description:
-      "Coordinates multi-step tasks, triggers approved tools, and passes outputs to downstream validation or human review.",
+      "A future concept for organizing approved workflow steps and routing decisions to a person for review.",
     accent: "rgba(255, 139, 104, 0.18)",
-    tags: ["Ops", "Tools", "Automation"],
+    tags: ["Workflows", "Approvals", "Human review"],
   },
 ];
 
 export const AI_WORKFLOW_STEPS = [
   {
     id: "01",
-    title: "Define the goal",
+    title: "Set the question",
     description:
-      "Translate the task into a clear objective, required inputs, and success criteria.",
+      "Choose the market or topic to review and state what information is needed.",
   },
   {
     id: "02",
-    title: "Collect context",
+    title: "Gather context",
     description:
-      "Pull from approved data sources, internal systems, and structured knowledge stores.",
+      "Bring together selected market material, news, and relevant documents.",
   },
   {
     id: "03",
-    title: "Plan the response",
+    title: "Summarize findings",
     description:
-      "Break the problem into milestones, validation gates, and fallback actions.",
+      "Present useful evidence, source references, and risk context in one review.",
   },
   {
     id: "04",
-    title: "Act within policy",
+    title: "Review before action",
     description:
-      "Use approved tools and external integrations only within the specified permissions.",
-  },
-  {
-    id: "05",
-    title: "Evaluate outputs",
-    description:
-      "Check quality, provenance, and operational alignment before handing off to the next stage.",
-  },
-  {
-    id: "06",
-    title: "Escalate when needed",
-    description:
-      "Route unclear or high-impact cases to a human reviewer for final sign-off.",
+      "A person decides whether to continue; this concept does not execute financial trades.",
   },
 ];
 
 export const TRADING_AGENT_DATA = [
   {
-    title: "Signal Agent",
+    title: "Market signals",
     description:
-      "Monitors market conditions and synthesizes signals from pricing, volatility, and event-driven changes.",
-    metrics: ["Trend detection", "Volatility scan", "Signal confidence"],
+      "A planned summary of selected price movements, volatility, and relevant events for review.",
+    metrics: ["Price movement", "Volatility", "Events"],
     tone: "orange" as const,
   },
   {
-    title: "News Agent",
+    title: "News context",
     description:
-      "Summarizes major headlines, event context, and potential implications for a portfolio or strategy.",
-    metrics: ["Headline clustering", "Narrative scoring", "Impact review"],
+      "A planned summary of selected news and its possible relevance to a market or asset.",
+    metrics: ["News", "Events", "Review"],
     tone: "wine" as const,
   },
   {
-    title: "Risk Monitor",
+    title: "Risk context",
     description:
-      "Tracks exposure, policy constraints, and emerging risk across active positions and workflows.",
-    metrics: ["Exposure checks", "Capital limits", "Alert routing"],
+      "A planned view of exposure and stated constraints to support human review.",
+    metrics: ["Exposure", "Constraints", "Review"],
     tone: "smoke" as const,
   },
 ];
 
 export const MARKET_INTELLIGENCE_ITEMS = [
   {
-    kicker: "Data",
-    title: "Connected inputs",
+    kicker: "Research",
+    title: "Selected sources",
     description:
-      "Market feeds, filings, and news are combined into a consistent analytical context.",
+      "Review market material, public news, and selected documents together.",
   },
   {
-    kicker: "Models",
-    title: "AI reasoning",
+    kicker: "Context",
+    title: "Market and risk context",
     description:
-      "Large language models and signal models provide interpretation and synthesis across sources.",
+      "Bring relevant market movement and stated risk considerations into view.",
   },
   {
-    kicker: "Controls",
-    title: "Governed actions",
+    kicker: "Review",
+    title: "Human decision-making",
     description:
-      "Rules, validation, and human oversight ensure outputs remain explainable and compliant.",
-  },
-  {
-    kicker: "Traceability",
-    title: "Source-linked outputs",
-    description:
-      "Every insight can be linked back to the information and steps used to generate it.",
+      "Use the summary as a starting point for review; the concept does not place trades.",
   },
 ];
 
@@ -123,21 +105,21 @@ export const AI_ROADMAP = [
     id: "01",
     title: "Research workspaces",
     description:
-      "A planned environment for reviewing structured context, source material, and analytical notes.",
+      "A planned space for reviewing selected sources, summaries, and notes together.",
     status: "Exploring",
   },
   {
     id: "02",
-    title: "Governed automations",
+    title: "Approved workflows",
     description:
-      "Future workflow tooling designed around explicit policies, approvals, and clear human control.",
+      "A future concept for organizing task steps and making approval points clear.",
     status: "Planned",
   },
   {
     id: "03",
-    title: "Personalized intelligence",
+    title: "AI insights",
     description:
-      "A coming-soon vision for interfaces that adapt presentation and context to defined user preferences.",
+      "Planned summaries that bring selected information and relevant context together for review.",
     status: "Future",
   },
 ];

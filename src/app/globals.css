@@ -243,3 +243,14 @@ body {
   background: var(--sx-border-strong);
   border-radius: 8px;
 }
+
+
+/* Shared warm hero treatment for AI, Web3, and Security pages. */
+.synxex-warm-hero {
+  background:
+    linear-gradient(180deg, rgba(9, 9, 11, 0) 0%, rgba(9, 9, 11, 0.08) 42%, #09090b 100%),
+    radial-gradient(ellipse 78% 78% at 4% 2%, rgba(255, 90, 31, 0.98) 0%, rgba(238, 58, 22, 0.88) 40%, transparent 82%),
+    radial-gradient(ellipse 76% 88% at 98% 0%, rgba(184, 30, 18, 0.96) 0%, rgba(120, 25, 28, 0.8) 48%, transparent 88%),
+    linear-gradient(135deg, #c64116 0%, #8d2418 42%, #481719 72%, #09090b 100%);
+  background-size: cover;
+}
