@@ -78,8 +78,8 @@ export default function AIAgentsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mt-6">
-              {AI_AGENT_CARDS.map((agent) => (
-                <AgentCard key={agent.id} agent={agent} />
+              {AI_AGENT_CARDS.map((agent, index) => (
+                <AgentCard key={agent.id} agent={agent} featured={index === 0} />
               ))}
             </div>
           </div>
