@@ -1,2 +1,24 @@
 import type { MetadataRoute } from "next";
-export default function sitemap(): MetadataRoute.Sitemap { const pages = ["", "/about", "/services", "/projects", "/technologies", "/contact"]; return pages.map((path) => ({ url: `https://synxex.com${path}`, lastModified: new Date() })); }
+
+const pages = [
+  "",
+  "/about",
+  "/contact",
+  "/markets",
+  "/ai-agents",
+  "/banking-cards",
+  "/remittance",
+  "/wallet",
+  "/security",
+  "/proof-of-reserves",
+  "/services",
+  "/projects",
+  "/technologies",
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return pages.map((path) => ({
+    url: `https://synxex.com${path}`,
+    lastModified: new Date(),
+  }));
+}

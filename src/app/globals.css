@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --font-inter: Inter, "Segoe UI", Arial, sans-serif;
+  --font-mono-financial: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-signature: "Segoe Script", "Bradley Hand", cursive;
+}
+
+.font-signature {
+  font-family: var(--font-signature);
+}
+
 /*
   SynxEx Design System — Design Tokens
   One token set, shared conceptually across web/iOS/Android (see src/config/design-tokens.md).

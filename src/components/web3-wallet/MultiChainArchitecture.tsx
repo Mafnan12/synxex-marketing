@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function MultiChainArchitecture() {
   const [activeCard, setActiveCard] = useState(2); // Center card active by default
@@ -16,7 +17,7 @@ export default function MultiChainArchitecture() {
           className="absolute left-1/2 top-1/4 h-[600px] w-[1000px] -translate-x-1/2 -translate-y-1/2 opacity-20 blur-[150px]"
           style={{
             background:
-              "radial-gradient(circle, rgba(14,35,80,0.6) 0%, rgba(255,90,31,0.15) 50%, transparent 75%)",
+              "radial-gradient(circle, rgba(92,16,35,0.5) 0%, rgba(255,106,43,0.2) 50%, transparent 75%)",
           }}
         />
       </div>
@@ -40,18 +41,18 @@ export default function MultiChainArchitecture() {
 
           {/* Action pill buttons matching screenshot */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <button
-              type="button"
+            <a
+              href="#workflow"
               className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition-all hover:bg-zinc-200 hover:shadow-[0_0_24px_rgba(255,255,255,0.25)]"
             >
-              Connect Wallet
-            </button>
-            <button
-              type="button"
+              Explore Wallet Workflow
+            </a>
+            <a
+              href="#architecture"
               className="rounded-full border border-white/20 bg-white/[0.04] px-7 py-3 text-sm font-semibold text-white backdrop-blur-md transition-all hover:border-white/40 hover:bg-white/[0.08]"
             >
               Explore Architecture
-            </button>
+            </a>
           </div>
         </div>
 
@@ -631,12 +632,12 @@ export default function MultiChainArchitecture() {
 
         {/* Bottom CTA Button matching screenshot */}
         <div className="mt-8 flex justify-center">
-          <button
-            type="button"
+          <Link
+            href="/banking-cards"
             className="rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-black transition-all hover:bg-zinc-200 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
           >
-            Open a bank account
-          </button>
+            Explore Banking &amp; Cards
+          </Link>
         </div>
       </div>
     </section>
