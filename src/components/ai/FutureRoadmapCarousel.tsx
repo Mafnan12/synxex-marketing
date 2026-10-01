@@ -188,7 +188,7 @@ export function FutureRoadmapCarousel() {
                 </div>
                 {/* Synthesis Output box */}
                 <div className="p-3.5 rounded-xl bg-[#141418] border border-[#24242A] text-xs text-zinc-300 leading-relaxed italic border-l-2 border-[#FF5A1F]">
-                  &ldquo;Normalized operational margins expanded by 140 bps with cloud workload retention reaching multi-year highs.&rdquo;
+                  "Normalized operational margins expanded by 140 bps with cloud workload retention reaching multi-year highs."
                 </div>
               </div>
             )}

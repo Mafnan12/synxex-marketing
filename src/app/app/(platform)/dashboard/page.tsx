@@ -15,7 +15,7 @@ import { useAccountStore } from "@/state/useAccountStore";
 import { useNotificationStore } from "@/state/useNotificationStore";
 import { useSystemStatusStore } from "@/state/useSystemStatusStore";
 import { marketService, transactionService, kycService, aiAgentService } from "@/services";
-import type { MarketTicker, Transaction, KycProfile, AiAgent, AppNotification } from "@/types";
+import type { MarketTicker, Transaction, KycProfile, AiAgent } from "@/types";
 import { AlertTriangle, ArrowRight } from "lucide-react";
 import { formatTimestamp } from "@/utils/format";
 
