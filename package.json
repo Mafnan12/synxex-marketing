@@ -11,6 +11,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",
+    "motion": "^13.4.4",
     "next": "^15.5.27",
     "react": "19.1.1",
     "react-dom": "19.1.1",
@@ -25,7 +26,12 @@
     "@types/react-dom": "^19.1.2",
     "eslint": "^9.25.0",
     "eslint-config-next": "^15.5.27",
+    "postcss": "^8.5.28",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.8.3"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.12.2": true
   }
 }

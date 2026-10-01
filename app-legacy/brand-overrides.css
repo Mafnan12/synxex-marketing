@@ -1,0 +1,51 @@
+:root {
+  --ink: #211a1a;
+  --paper: #f3f0ed;
+  --lime: #ff6a2b;
+  --mist: #e5ded9;
+  --line: #cfc3bc;
+  --muted: #716865;
+  --lava: #ff6a2b;
+  --lava-red: #e2321f;
+  --wine: #5c1023;
+  --smoke: #817b79;
+}
+
+body { background: var(--paper); color: var(--ink); }
+.brand span { color: var(--lava); }
+.nav-links > a:not(.button):hover, .text-link:hover { color: var(--lava-red); }
+.button { background: var(--wine); border-color: var(--wine); }
+.button:hover { background: #431720; border-color: #431720; }
+.eyebrow { color: #8a3d31; }
+.hero h1 em { color: var(--lava-red); }
+.hero-art { background: linear-gradient(135deg, #e8d4ca, #f0a17d); }
+.orb { border-color: #9d4338; box-shadow: inset 0 0 0 58px var(--lava); }
+.signal { border-color: #8a3d31; }
+.art-label { color: var(--wine); }
+.dark-section { background: #211a1a; }
+.dark-section .eyebrow, .inverse { color: #f39067; }
+.numbered-grid, .service-item { border-color: #594444; }
+.service-item span, .three-grid span { color: #e08a70; }
+.project-placeholder { background: linear-gradient(135deg, var(--wine), var(--lava-red) 65%, var(--lava)); color: #fff; }
+.project-placeholder .eyebrow { color: #ffd2be; }
+.three-grid article { border-color: #651d2d; }
+.cta { background: linear-gradient(120deg, var(--lava), var(--lava-red) 58%, var(--wine)); color: #fff; }
+.cta .eyebrow { color: #f9c7b4; }
+.light { background: #fff8f2; color: #211a1a; border-color: #fff8f2; }
+footer { background: #211719; color: #eee5e1; }
+.footer-top p:not(.eyebrow) { color: #b7a8a3; }
+.footer-top .eyebrow { color: #e49a80; }
+.footer-bottom { border-color: #493638; color: #b5a19c; }
+.card { background: #e9dfda; }
+.tags span { border-color: #c5aaa0; color: #762b2d; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { outline-color: #f3a17d; }
+.form-error { color: #a32927 !important; }
+.menu i { background: var(--lava); }
+
+a:focus-visible, button:focus-visible { outline: 2px solid var(--lava); outline-offset: 4px; }
+
+@media (max-width: 760px) {
+  .wrap { width: min(100% - 32px, 1160px); }
+  .contact-layout { grid-template-columns: 1fr; gap: 28px; }
+  .split { grid-template-columns: 1fr; gap: 28px; }
+}

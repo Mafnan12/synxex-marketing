@@ -77,7 +77,7 @@ export function Navbar() {
         hidden ? "-translate-y-[calc(100%+2rem)]" : "translate-y-0"
       )}
     >
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 rounded-full border border-white/[0.08] bg-[#08080a]/90 pl-4 pr-2 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:pl-5">
+      <div className="mx-auto flex h-14 w-full max-w-7xl items-center justify-between gap-3 rounded-full border border-white/[0.08] bg-[#08080a]/90 pl-4 pr-2 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:pl-5">
         {/* Logo */}
         <Link href="/" className="flex shrink-0 items-center">
           <SignatureLogo size={26} />
@@ -167,22 +167,22 @@ export function Navbar() {
         {/* Right cluster */}
         <div className="hidden shrink-0 items-center gap-3 xl:flex">
           <div className="flex items-center gap-1">
-            <a
-              href="#"
+            <span
               aria-label="SynxEx on X (coming soon)"
               title="X — coming soon"
-              className="flex h-8 w-8 items-center justify-center rounded-full text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+              aria-disabled="true"
+              className="flex h-8 w-8 cursor-not-allowed items-center justify-center rounded-full text-white/35"
             >
               <XIcon className="h-3.5 w-3.5" />
-            </a>
-            <a
-              href="#"
+            </span>
+            <span
               aria-label="SynxEx on Telegram (coming soon)"
               title="Telegram — coming soon"
-              className="flex h-8 w-8 items-center justify-center rounded-full text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+              aria-disabled="true"
+              className="flex h-8 w-8 cursor-not-allowed items-center justify-center rounded-full text-white/35"
             >
               <Send className="h-3.5 w-3.5" />
-            </a>
+            </span>
           </div>
           <span className="h-5 w-px bg-white/15" aria-hidden="true" />
           <Link href="/login" className="px-1 text-[13px] font-medium text-white/65 transition-colors hover:text-white">
@@ -275,12 +275,12 @@ export function Navbar() {
           </div>
 
           <div className="mt-3 flex items-center justify-center gap-3 border-t border-white/[0.06] pt-3">
-            <a href="#" aria-label="SynxEx on X (coming soon)" className="flex h-8 w-8 items-center justify-center rounded-full text-white/60 hover:bg-white/10 hover:text-white">
+            <span aria-label="SynxEx on X (coming soon)" aria-disabled="true" title="X — coming soon" className="flex h-8 w-8 cursor-not-allowed items-center justify-center rounded-full text-white/35">
               <XIcon className="h-3.5 w-3.5" />
-            </a>
-            <a href="#" aria-label="SynxEx on Telegram (coming soon)" className="flex h-8 w-8 items-center justify-center rounded-full text-white/60 hover:bg-white/10 hover:text-white">
+            </span>
+            <span aria-label="SynxEx on Telegram (coming soon)" aria-disabled="true" title="Telegram — coming soon" className="flex h-8 w-8 cursor-not-allowed items-center justify-center rounded-full text-white/35">
               <Send className="h-3.5 w-3.5" />
-            </a>
+            </span>
           </div>
 
           <div className="mt-3 flex gap-2 border-t border-white/[0.06] pt-3">

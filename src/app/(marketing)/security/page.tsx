@@ -313,13 +313,13 @@ export default function SecurityPage() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link
-              href="/ai"
+              href="/ai-agents"
               className="px-6 py-3 rounded-lg bg-[#E25822] hover:bg-[#c94b1a] text-white text-sm font-medium transition-all shadow-lg shadow-[#E25822]/20"
             >
               Explore AI Capabilities
             </Link>
             <Link
-              href="/web3"
+              href="/wallet"
               className="px-6 py-3 rounded-lg bg-[#101010] hover:bg-[#141414] border border-white/10 text-zinc-300 text-sm font-medium transition-all"
             >
               Explore Web3 Vision
