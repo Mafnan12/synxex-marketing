@@ -39,7 +39,7 @@ export default function DashboardPage() {
     aiAgentService.listAgents().then(setAgents);
   }, [fetchAccount, fetchNotifications, fetchSystemStatus]);
 
-  const securityAlerts = notifications.filter((n) => n.category === "security" && !n.read);
+  const securityAlerts = notifications.filter((n: AppNotification) => n.category === "security" && !n.read);
   const currentTier = kyc?.tiers.find((t) => t.level === kyc.currentTier);
 
   return (
