@@ -1,0 +1,29 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "crypto.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Metallic Bitcoin and Ethereum coins floating above a dark circular pedestal. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    },
+    {
+      "file": "forex.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Sculptural metallic dollar euro and yen symbols with faint financial data lines. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    },
+    {
+      "file": "stocks.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Futuristic monumental stock exchange architecture with glowing orange chart line overlays. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    },
+    {
+      "file": "commodities.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Premium metallic gold bars and silver ingots with abstract lava energy ribbons. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    },
+    {
+      "file": "indices.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Sophisticated dimensional financial bar chart landscape with glowing rising line. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    },
+    {
+      "file": "digital.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium fintech marketplace category image. Create one landscape 3D cinematic studio render: Glowing interconnected blockchain nodes forming an abstract financial network. Unified SYNXEX art direction: deep black #080808 background, charcoal metallic and smoked glass surfaces, burgundy #800020 and wine #6E1423 ambient depth, lava orange #FF5A1F and lava red #E32636 edge lighting, light smoke grey highlights. Restrained luxurious institutional mood, dramatic chiaroscuro, crisp central subject, generous black negative space, fine grain. No blue, purple, green, text, logos or watermark. Landscape composition."
+    }
+  ]
+}
