@@ -1,0 +1,1 @@
+export function PageHero({ eyebrow, title, intro }: { eyebrow: string; title: string; intro: string }) { return <section className="page-hero wrap"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lead">{intro}</p></section>; }

@@ -1,0 +1,46 @@
+'use client';
+
+import { FormEvent, useState } from 'react';
+
+type State = 'idle' | 'sending' | 'success' | 'error';
+
+export function ContactForm() {
+  const [state, setState] = useState<State>('idle');
+  const [error, setError] = useState('');
+
+  function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    if (!form.checkValidity()) {
+      setError('Please complete the required fields with a valid email address.');
+      return;
+    }
+    setError('');
+    setState('sending');
+    window.setTimeout(() => setState('success'), 650);
+  }
+
+  if (state === 'success') {
+    return <div className="form-success" role="status">
+      <span aria-hidden="true">✓</span>
+      <h2>Message ready to send</h2>
+      <p>This form is prepared for an email or CRM integration. Connect your preferred service to receive submissions.</p>
+      <button className="text-link" type="button" onClick={() => setState('idle')}>Send another message</button>
+    </div>;
+  }
+
+  return <form className="contact-form" onSubmit={submit} noValidate>
+    <div className="field-grid">
+      <label>Name<input name="name" required autoComplete="name" /></label>
+      <label>Email<input name="email" type="email" required autoComplete="email" /></label>
+    </div>
+    <div className="field-grid">
+      <label>Company<input name="company" autoComplete="organization" /></label>
+      <label>What are you interested in?<select name="subject" required defaultValue=""><option value="" disabled>Select a topic</option><option>Crypto, forex, or stocks</option><option>Banking, cards, or transfers</option><option>Web3 wallet or AI agents</option><option>Getting started</option><option>Other</option></select></label>
+    </div>
+    <label>How can we help?<textarea name="message" rows={5} required /></label>
+    {error && <p className="form-error" role="alert">{error}</p>}
+    <button className="button" type="submit" disabled={state === 'sending'}>{state === 'sending' ? 'Preparing…' : 'Send inquiry'} <b aria-hidden="true">→</b></button>
+    <p className="form-note">Submission delivery is not configured yet. No information is transmitted.</p>
+  </form>;
+}

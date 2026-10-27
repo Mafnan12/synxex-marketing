@@ -1,0 +1,25 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "essential-front.webp",
+      "prompt": "Use case: product-mockup. Asset type: photorealistic texture for the front face of a physical 3D credit card. Make an orthographic, straight-on, edge-to-edge macro scan of a premium deep matte-black soft-touch metal card face, subtle burgundy undertone, extremely fine brushed texture and natural studio reflections. Entire landscape image IS the flat card face, no surroundings, no perspective, no pedestal, no frame, no margins, no shadow beyond the card. Card aspect ratio 85.6:53.98. Minimal finely engraved metallic silver SYNXEX upper left, ESSENTIAL small bottom right. Real silver embedded EMV chip at left middle and true contactless symbol beside it. Small engraved CONCEPT and four masked groups of dots near bottom left, no account number, no Visa/Mastercard logo. Thin restrained lava-orange #FF5A1F lower accent. Palette deep black #080808, charcoal #111111, wine #6E1423, metallic silver reflections. No blue, purple, green, gold, cartoon or illustration. Physically believable luxury studio photography."
+    },
+    {
+      "file": "premium-front.webp",
+      "prompt": "Use case: product-mockup. Asset type: photorealistic texture for the front face of a physical 3D credit card. Make an orthographic, straight-on, edge-to-edge macro scan of a premium brushed-metal burgundy #800020 bank card face with deep wine #6E1423 depth, extremely fine horizontal metal brushing and physically realistic soft silver reflections. Entire landscape image IS the flat card face, no surroundings, no perspective, no pedestal, no frame, no margins, no shadow beyond the card. Card aspect ratio 85.6:53.98. Minimal finely engraved metallic silver SYNXEX upper left, PREMIUM small bottom right. Real silver embedded EMV chip at left middle and true contactless symbol beside it. Small engraved CONCEPT and four masked groups of dots near bottom left, no account number, no Visa/Mastercard logo. Restrained lava-orange #FF5A1F accent. Only black, burgundy, wine, lava orange/red and metallic silver; no blue, purple, green, gold, cartoon or illustration. Physically believable luxury product photography."
+    },
+    {
+      "file": "elite-front.webp",
+      "prompt": "Use case: product-mockup. Asset type: photorealistic texture for the front face of a physical 3D credit card. Make an orthographic, straight-on, edge-to-edge macro scan of a flagship deep matte-black titanium bank card face, sophisticated fine brushed metallic silver streak subtly reflected across its dark surface, subtle burgundy #800020 depth and lava-orange #FF5A1F accent. Entire landscape image IS the flat card face, no surroundings, no perspective, no pedestal, no frame, no margins, no shadow beyond the card. Card aspect ratio 85.6:53.98. Minimal precision-engraved metallic silver SYNXEX upper left, ELITE small bottom right. Real silver embedded EMV chip at left middle and true contactless symbol beside it. Small engraved CONCEPT and four masked groups of dots near bottom left, no account number, no Visa/Mastercard logo. Fine soft-touch texture, extremely realistic materials and reflections. Only black, wine, burgundy, lava orange/red and metallic silver; no blue, purple, green, gold, cartoon or illustration."
+    },
+    {
+      "file": "card-back.webp",
+      "prompt": "Use case: product-mockup. Asset type: photorealistic texture for back face of a physical 3D credit card. Orthographic straight-on tightly cropped edge-to-edge landscape scan of a deep matte-black premium metallic bank card rear face. Whole image IS the card face, no surroundings, frame, margin or perspective. Card aspect ratio 85.6:53.98. Realistic broad charcoal magnetic stripe across upper fifth, silver-grey signature strip below, tiny laser-engraved SYNXEX bottom left and CONCEPT CARD bottom right. No numbers, no QR code, no financial network logo. Fine brushed black titanium texture, subdued burgundy #800020 undertone, lava-orange #FF5A1F hairline detail bottom edge and natural metallic silver reflections. Luxury studio realism. No blue, purple, green, gold or cartoon."
+    },
+    {
+      "file": "craft-detail.webp",
+      "prompt": "Use case: product-mockup. Asset type: luxury banking website editorial detail image. Extreme photorealistic macro studio photograph of a physical premium SYNXEX matte-black titanium bank card on black volcanic glass, shallow depth of field, focus on a real embedded metallic-silver EMV chip and precision-cut rounded card edge. Physically accurate thin card thickness, fine brushed-metal surface, engraved SYNXEX partially visible. Shot at close low three-quarter angle with natural ambient occlusion and believable contact shadows. Black #080808 background, burgundy #800020 and wine #6E1423 ambient light, very subtle lava-orange #FF5A1F illuminated bevel, natural silver reflections. Restrained luxury product advertisement, landscape framing, realistic physically based lighting. No blue, purple, green, gold, cartoon, extra floating objects, watermarks or card numbers."
+    }
+  ]
+}

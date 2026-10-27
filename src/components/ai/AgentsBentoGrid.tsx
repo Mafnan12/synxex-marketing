@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 
 export function AgentsBentoGrid() {
-  const [activeCard, setActiveCard] = useState<string | null>(null);
   const [activeMobileTab, setActiveMobileTab] = useState<"portfolio" | "risk" | "approval">("portfolio");
+  const [showApprovalInfo, setShowApprovalInfo] = useState(false);
 
   return (
     <div className="w-full space-y-6">
@@ -46,8 +46,6 @@ export function AgentsBentoGrid() {
           
           {/* Card 1: Multi-Agent Model Routing & Cognitive Pipeline */}
           <div
-            onMouseEnter={() => setActiveCard("pipeline")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] overflow-hidden p-6 flex flex-col justify-between min-h-[380px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             {/* Subtle Top Gradient */}
@@ -142,8 +140,6 @@ export function AgentsBentoGrid() {
 
           {/* Card 2: Autonomous Orderflow & Depth Matrix */}
           <div
-            onMouseEnter={() => setActiveCard("depth")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] overflow-hidden p-6 flex flex-col justify-between min-h-[340px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             <div className="relative z-10 flex items-center justify-between">
@@ -225,8 +221,6 @@ export function AgentsBentoGrid() {
 
           {/* Card 3: Design Tokens & System Specifications */}
           <div
-            onMouseEnter={() => setActiveCard("spec")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] p-5 transition-all duration-300 hover:border-white/20"
           >
             <div className="grid grid-cols-12 gap-3 items-stretch">
@@ -283,8 +277,6 @@ export function AgentsBentoGrid() {
           
           {/* Card 4: Automated Policy Rules & Command Palette */}
           <div
-            onMouseEnter={() => setActiveCard("command")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] overflow-hidden p-6 flex flex-col justify-between min-h-[220px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             <div className="relative z-10 flex items-center justify-between">
@@ -335,8 +327,6 @@ export function AgentsBentoGrid() {
 
           {/* Card 5: THE HERO CROWN JEWEL - Hardware Security Enclave & Multi-Party Computation */}
           <div
-            onMouseEnter={() => setActiveCard("enclave")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.12] overflow-hidden p-6 flex flex-col justify-between min-h-[400px] shadow-2xl transition-all duration-500 hover:border-[#FF5A1F]/50 hover:shadow-[#FF5A1F]/10"
           >
             {/* Subtle Radiant Halo */}
@@ -416,8 +406,6 @@ export function AgentsBentoGrid() {
 
           {/* Card 6: Mobile Trading & Human-in-the-Loop Gateway */}
           <div
-            onMouseEnter={() => setActiveCard("mobile")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] p-6 flex flex-col justify-between min-h-[350px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             {/* Phone Selector Controls */}
@@ -520,9 +508,19 @@ export function AgentsBentoGrid() {
                       <div className="text-[9px] font-mono text-zinc-400">
                         Spread: 18.2 bps · Est. Profit: $436.80 · Zero MEV
                       </div>
-                      <button className="w-full py-1.5 rounded-lg bg-[#FF5A1F] hover:bg-[#e04e17] text-white text-[10px] font-mono font-bold transition-colors">
+                      <button
+                        type="button"
+                        onClick={() => setShowApprovalInfo((show) => !show)}
+                        aria-expanded={showApprovalInfo}
+                        className="w-full py-1.5 rounded-lg bg-[#FF5A1F] hover:bg-[#e04e17] text-white text-[10px] font-mono font-bold transition-colors"
+                      >
                         BIOMETRIC APPROVAL ➔
                       </button>
+                      {showApprovalInfo && (
+                        <p className="text-[9px] leading-relaxed text-zinc-400" role="status">
+                          Informational demo only. No trade or account action is performed.
+                        </p>
+                      )}
                     </div>
                   </div>
                 )}
@@ -543,8 +541,6 @@ export function AgentsBentoGrid() {
           
           {/* Card 7: Institutional Vault & Custody Ledger */}
           <div
-            onMouseEnter={() => setActiveCard("custody")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] overflow-hidden p-6 flex flex-col justify-between min-h-[380px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             <div className="relative z-10 flex items-center justify-between">
@@ -607,8 +603,6 @@ export function AgentsBentoGrid() {
 
           {/* Card 8: Physical Hardware Authenticator & NFC Signing */}
           <div
-            onMouseEnter={() => setActiveCard("hardware")}
-            onMouseLeave={() => setActiveCard(null)}
             className="group relative rounded-3xl bg-[#09090B] border border-white/[0.08] overflow-hidden p-6 flex flex-col justify-between min-h-[380px] transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60"
           >
             <div className="relative z-10 flex items-center justify-between">
