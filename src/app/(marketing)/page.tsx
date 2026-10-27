@@ -85,7 +85,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
-                href="/login"
+                href="https://synxex-app.vercel.app/pages/register.html"
                 className="rounded-md bg-gradient-to-r from-[#ff6a2b] via-[#e2321f] to-[#5c1023] px-6 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_rgba(226,50,31,0.3)] transition-opacity hover:opacity-90"
               >
                 Get Started

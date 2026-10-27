@@ -41,7 +41,7 @@ export function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/login" className="text-sm text-white/60 transition-colors hover:text-white">
+                <Link href="https://synxex-app.vercel.app/pages/login.html" className="text-sm text-white/60 transition-colors hover:text-white">
                   Sign in
                 </Link>
               </li>

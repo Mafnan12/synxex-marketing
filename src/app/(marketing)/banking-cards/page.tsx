@@ -25,7 +25,7 @@ export default function BankingCardsPage() {
         eyebrow="Banking & Cards"
         title="Banking and cards, on the same balance as everything else"
         description="No separate bank account to fund. SynxEx is designing multi-currency banking and card issuance directly on top of your unified account."
-        primaryCta={{ label: "Get Started", href: "/login" }}
+        primaryCta={{ label: "Get Started", href: "https://synxex-app.vercel.app/pages/register.html" }}
         secondaryCta={{ label: "Explore SynxEx", href: "/#products" }}
       />
 

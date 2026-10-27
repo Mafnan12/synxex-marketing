@@ -19,7 +19,7 @@ export default function AboutPage() {
         eyebrow="About SynxEx"
         title="Building one platform for every market"
         description="SynxEx exists to bring crypto, forex, stocks, banking, cards, remittance, AI agents, and Web3 into a single financial account — instead of asking you to manage nine."
-        primaryCta={{ label: "Get Started", href: "/login" }}
+        primaryCta={{ label: "Get Started", href: "https://synxex-app.vercel.app/pages/register.html" }}
         secondaryCta={{ label: "Contact us", href: "/contact" }}
       />
 

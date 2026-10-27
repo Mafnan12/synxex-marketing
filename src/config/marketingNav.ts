@@ -60,8 +60,8 @@ export const megaMenuColumns: MegaMenuColumn[] = [
   {
     heading: "Account",
     links: [
-      { label: "Sign in", href: "/login", description: "Access your SynxEx account" },
-      { label: "Get Started", href: "/login", description: "Open a SynxEx account" },
+      { label: "Sign in", href: "https://synxex-app.vercel.app/pages/login.html", description: "Access your SynxEx account" },
+      { label: "Get Started", href: "https://synxex-app.vercel.app/pages/register.html", description: "Open a SynxEx account" },
     ],
   },
 ];

@@ -19,7 +19,7 @@ export default function RemittancePage() {
         eyebrow="Remittance"
         title="Global transfers, priced honestly"
         description="SynxEx is designing a remittance flow that supports crypto-to-fiat, fiat-to-fiat, and fiat-to-crypto transfers — with every fee shown before you send."
-        primaryCta={{ label: "Get Started", href: "/login" }}
+        primaryCta={{ label: "Get Started", href: "https://synxex-app.vercel.app/pages/register.html" }}
         secondaryCta={{ label: "Learn More", href: "/about" }}
       />
 

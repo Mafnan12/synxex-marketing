@@ -167,11 +167,11 @@ export function Navbar() {
             </a>
           </div>
           <span className="h-5 w-px bg-white/15" aria-hidden="true" />
-          <Link href="/login" className="px-1 text-[13px] font-medium text-white/65 transition-colors hover:text-white">
+          <Link href="https://synxex-app.vercel.app/pages/login.html" className="px-1 text-[13px] font-medium text-white/65 transition-colors hover:text-white">
             Sign in
           </Link>
           <Link
-            href="/login"
+            href="https://synxex-app.vercel.app/pages/register.html"
             className="rounded-full bg-gradient-to-r from-[#ff6a2b] via-[#e2321f] to-[#5c1023] px-4 py-2 text-[13px] font-semibold text-white shadow-[0_4px_16px_rgba(226,50,31,0.35)] transition-opacity hover:opacity-90"
           >
             Get Started
@@ -237,11 +237,11 @@ export function Navbar() {
           </div>
 
           <div className="mt-3 flex gap-2 border-t border-white/[0.06] pt-3">
-            <Link href="/login" className="flex-1 rounded-full border border-white/15 px-4 py-2.5 text-center text-sm font-medium text-white">
+            <Link href="https://synxex-app.vercel.app/pages/login.html" className="flex-1 rounded-full border border-white/15 px-4 py-2.5 text-center text-sm font-medium text-white">
               Sign in
             </Link>
             <Link
-              href="/login"
+              href="https://synxex-app.vercel.app/pages/register.html"
               className="flex-1 rounded-full bg-gradient-to-r from-[#ff6a2b] via-[#e2321f] to-[#5c1023] px-4 py-2.5 text-center text-sm font-semibold text-white"
             >
               Get Started

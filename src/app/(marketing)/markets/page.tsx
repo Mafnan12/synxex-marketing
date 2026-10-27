@@ -25,7 +25,7 @@ export default function MarketsPage() {
         eyebrow="Markets"
         title="Crypto, forex, and stocks in one venue"
         description="SynxEx is being built so you can move between crypto, forex, and stocks without switching accounts, balances, or interfaces."
-        primaryCta={{ label: "Get Started", href: "/login" }}
+        primaryCta={{ label: "Get Started", href: "https://synxex-app.vercel.app/pages/register.html" }}
         secondaryCta={{ label: "Explore SynxEx", href: "/#products" }}
       />
 

@@ -43,7 +43,7 @@ export function HeroContent() {
       </p>
 
       <div className="flex flex-wrap items-center justify-center gap-3">
-        <Link href="/login" className={`${styles.cta} ${styles.ctaPrimary}`}>
+        <Link href="https://synxex-app.vercel.app/pages/register.html" className={`${styles.cta} ${styles.ctaPrimary}`}>
           <span className={styles.corner} data-pos="tl" />
           <span className={styles.corner} data-pos="tr" />
           <span className={styles.corner} data-pos="bl" />
