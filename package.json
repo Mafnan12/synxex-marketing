@@ -9,7 +9,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^4.33.0",
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",
     "motion": "^13.4.4",
